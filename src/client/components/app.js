@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SearchBar from './search_bar';
-import VideoList from './video_list'
+import VideoList from './video_list';
+import MenuList from '../containers/menu_list';
 import YTSearch from 'youtube-api-search'
 const API_KEY='AIzaSyAh3gnYhg45PCu6jCf_8j6fAg8FTYHKudk';
 export default class App extends Component {
@@ -18,8 +19,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-      <SearchBar />
-      <VideoList  videos={this.state.videos} />
+      <MenuList />
       </div>
     );
   }
